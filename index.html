@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        input {
+            text-align: center;
+        }
+        body{
+            background: #114357;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F29492, #114357);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F29492, #114357); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+        }
+        .bgblur{
+            background-image: url("photographer.jpg");
+
+            filter: blur(8px);
+            -webkit-filter: blur(8px);
+        }
+        h1{
+            color: #fcf8f8f3;
+            opacity: 2;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Addition App</title>
+</head>
+<body>
+    
+    <!-- Push everything to the middle -->
+    <div class="bgblur"></div>
+    <div class="container ">
+        
+        <h1 class="mt-3 text-center">The Addition App</h1>
+        <hr>
+        <!-- Title --> 
+        <div class="form-row" ><!-- First textbox -->
+            <div class="col">
+                <input
+                id="x" 
+                type="number" 
+                class="form-control" 
+                placeholder="1st number">
+            </div>
+
+            <div class="col"><!-- Second textbox -->
+                <input
+                id="y" 
+                type="number" 
+                class="form-control" 
+                placeholder="2nd number">
+            </div>
+        </div>
+
+        <div class="form-row mt-2"><!-- Sum textbox -->
+            <div class="col bg-info">
+                <input
+                id="z" 
+                class="form-control" 
+                type="number" 
+                placeholder="Sum" 
+                readonly>
+            </div>
+        </div>
+        <hr> 
+        <h2 class="text-right mt-3">Instructions</h2>
+        <ol class = "text-right">
+            <li>Enter first number</li>
+            <li>Enter second number</li>
+            <li>Sum of the two numbers will be output</li>
+        </ol>
+        
+        <script src="events.js"></script>
+    </div>
+</body>
+</html>
